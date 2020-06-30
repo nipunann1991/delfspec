@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+@mixin extra-light{
+    font-weight: 200;
+}
+
+@mixin light{
+    font-weight: 300;
+}
+
+@mixin regular{
+    font-weight: 400;
+}
+
+@mixin medium{
+    font-weight: 500;
+}
+
+@mixin semi-bold{
+    font-weight: 600;
+}
+
+@mixin bold{
+    font-weight: 700;
+}

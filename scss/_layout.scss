@@ -1,0 +1,161 @@
+
+
+html{
+	font-size:  55%;  
+
+	@include breakpoint($tablet){
+		font-size:  52%;
+	}
+
+	@include breakpoint($tablet-large){
+		font-size:  55%;
+	}
+
+	@include breakpoint($small-desktop){
+		font-size:  62.5%;
+	}
+	
+	
+}
+
+body{
+	font-size: $default-font-size;
+	font-family: $default-font;
+	letter-spacing: 0.02rem;
+	color: $dark-gray;
+}
+
+
+ 
+
+h1, h2, h3, h4{ 
+	@include bold;
+	position: relative; 
+}
+
+
+h1{
+	@include bold; 
+}
+
+.fluid{
+	width: 100%;
+
+	.centered{
+		max-width: 1200px;
+		margin: auto;
+
+		@include breakpoint($tablet-medium){
+			max-width: 830px;
+		}
+
+		@include breakpoint($tablet-large){
+			max-width: 940px;
+		}
+
+		@include breakpoint($small-desktop){
+			max-width: 1200px;
+		}
+	}
+}
+
+.col-wrap{ 
+	@include flex;
+	width: 100%; 
+	flex-direction: column;
+	margin: 0;
+
+	@include breakpoint($tablet){
+		flex-direction: row;  
+	}
+	
+	.col-1{
+		@include column(1);
+	}
+
+	.col-2{
+		@include column(2);
+	}
+
+	.col-3{
+		@include column(3);
+	}
+
+	.col-4{
+		@include column(4);
+	}
+
+	.col-5{
+		@include column(5);
+	}
+
+	.col-6{ 	
+		@include column(6); 
+	}
+
+	.col-7{
+		@include column(7);
+	}
+
+	.col-8{
+		@include column(8);  
+	}
+
+	.col-9{
+		@include column(9);  
+	}
+
+	.col-10{
+		@include column(10);  
+	}
+
+	.col-11{
+		@include column(11);  
+	}
+
+	.col-12{
+		@include column(12);  
+	}
+}
+
+.slick-slide{
+	outline: 0;
+}
+
+button.btn{
+	padding: 1rem 3.5rem;
+	background: $base-color;
+	color: $white;
+	border: 0;
+	border-radius: 5rem;
+}
+
+p{
+	margin-bottom: 1.5rem;
+}
+
+.hidden-md{
+	display: none;
+
+	@include breakpoint(769px){
+		display: block;
+	}
+}
+
+.visible-sm{
+	display: block;
+
+	@include breakpoint($tablet){
+		display: none;
+	}
+}
+
+.visible-sm-m{
+	display: block;
+
+	@include breakpoint($medium-device){
+		display: none;
+	}
+}
+
+ 
