@@ -466,7 +466,7 @@ section.tech-section{
 
 					&:hover{
 						filter: grayscale(0%);
-						opacity: 1;
+						opacity: 1 !important ;
 					}
 
 					@include breakpoint($tablet){
