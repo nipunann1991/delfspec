@@ -61,10 +61,20 @@
 					}
 
 					li{
+
 						a{
 							color: $dark-gray;
+						} 
+
+						&.active.home { 
+							a{
+								color: $base-color !important;
+							}  
 						}
+
 					}
+
+
 				}
 				
 			}

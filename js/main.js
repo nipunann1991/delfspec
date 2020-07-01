@@ -31,11 +31,11 @@ $(function(){
             
             var className = element.getAttribute("class");
              
-            var controller1 = new ScrollMagic.Controller();
+            var controller1 = new ScrollMagic.Controller({globalSceneOptions: {duration: 700}});
 
             var scene = new ScrollMagic.Scene({
                 triggerElement: '#'+className,
-                offset: 0,
+                offset: 100,
                 triggerHook: .6
             }) 
             .removeClassToggle('.nav-menu .active')
